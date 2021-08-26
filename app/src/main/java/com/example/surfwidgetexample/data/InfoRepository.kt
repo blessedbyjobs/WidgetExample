@@ -1,4 +1,4 @@
-package com.example.surfwidgetexample
+package com.example.surfwidgetexample.data
 
 import android.content.Context
 

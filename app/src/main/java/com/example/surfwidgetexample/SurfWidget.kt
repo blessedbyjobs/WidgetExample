@@ -7,6 +7,7 @@ import android.widget.RemoteViews
 import android.app.PendingIntent
 import android.content.Intent
 import android.net.Uri
+import com.example.surfwidgetexample.data.InfoRepository
 
 
 class SurfWidget : AppWidgetProvider() {
