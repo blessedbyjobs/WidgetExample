@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.SurfWidgetExample.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:theme="@style/Theme.SurfWidgetExample.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/image_container_fl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        tools:text="SERIES: ANDROID 12 FEATURE SPOTLIGHTS" />
+
+    <TextView
+        android:id="@+id/text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/image_container_fl"
+        android:ellipsize="end"
+        android:maxLines="6"
+        android:textStyle="bold"
+        tools:text="Most of Android 12's visual changes have been pretty well-received overall, but a few of the tweaks have gone just a step too far. " />
+
+    <TextView
+        android:id="@+id/opinion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="italic"
+        tools:text="AndroidPolice" />
+
+    <FrameLayout
+        android:id="@+id/image_container_fl"
+        style="@style/Widget.SurfWidgetExample.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_android12_hero" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_container_fl"
+        android:layout_alignStart="@+id/image_container_fl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_right_arrow" />
+
+    <Button
+        android:id="@+id/open_in_browser_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next_btn"
+        android:layout_alignStart="@+id/image_container_fl"
+        android:layout_alignParentEnd="true"
+        android:text="Открыть" />
+
+</RelativeLayout>

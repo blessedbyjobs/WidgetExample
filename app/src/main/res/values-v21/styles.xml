@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Widget.SurfWidgetExample.AppWidget.Container" parent="android:Widget">
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_background</item>
+    </style>
+
+    <style name="Widget.SurfWidgetExample.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_inner_view_background</item>
+    </style>
+
+    <style name="Widget.SurfWidgetExample.AppWidget.OtherInnerView" parent="android:Widget">
+        <item name="android:padding">?attr/appWidgetPadding</item>
+        <item name="android:background">@drawable/app_widget_other_inner_view_background</item>
+    </style>
+</resources>
